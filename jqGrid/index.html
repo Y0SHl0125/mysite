@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="jqGrid/css/ui.jqgrid.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.19/jquery-ui.min.js"></script>
+  <script src="https://js.cybozu.com/jqgrid/v5.1.1/js/jquery.jqGrid.min.js"></script>
+  <script src="https://js.cybozu.com/jqgrid/v5.1.1/js/i18n/grid.locale-en.js"></script>
+  <script src="https://js.cybozu.com/jqgrid/v5.1.1/js/i18n/grid.locale-ja.js"></script>
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.19/themes/redmond/jquery-ui.css">
+  <link rel="stylesheet" href="https://js.cybozu.com/jqgrid/v5.1.1/css/ui.jqgrid.css"> 
+</head>
+<body>
+  <table id="list">
+  </table>
+  <script>
+
+jQuery(document).ready(function()
+{
+	var mydata = [
+        {rid:"1", model:"ZX-1", model_name:"クリックして名前を入れてください。"},
+        {rid:"2", model:"AX-100", model_name:"クリックして名前を入れてください。"},
+        {rid:"3", model:"T-1000", model_name:"クリックして名前を入れてください。"},
+        {rid:"4", model:"T-1001", model_name:"クリックして名前を入れてください。"},
+        {rid:"5", model:"T-1002", model_name:"クリックして名前を入れてください。"},
+        {rid:"6", model:"T-1003", model_name:"クリックして名前を入れてください。"},
+        {rid:"7", model:"T-1004", model_name:"クリックして名前を入れてください。"},
+        {rid:"8", model:"T-1005", model_name:"クリックして名前を入れてください。"},
+        {rid:"9", model:"T-1006", model_name:"クリックして名前を入れてください。"},
+        {rid:"10", model:"T-1007", model_name:"クリックして名前を入れてください。"},
+        {rid:"11", model:"T-1008", model_name:"クリックして名前を入れてください。"}
+	];
+
+    jQuery("#list").jqGrid({
+        editurl: 'clientArray',
+        data: mydata,
+        datatype: "local",
+        colNames:['ID', '型式', '名称'],
+        colModel:[
+            {index:'rid', name:'rid', width:50 },
+            {index:'model', name:'model', width:150, editable:true },
+            {index:'model_name', name:'model_name', width:250, editoptions:{maxlength:50}, editable:true }
+        ],
+        width: 450,
+        height: 'auto',
+        cellEdit: true,
+        autoencode: true,
+        cellsubmit: 'clientArray',
+        rowNum: 20,
+        sortname: 'rid',
+        sortorder: "ASC",
+        multiselect: true,
+        caption: '製品一覧'
+    }); 
+});
+	
+  </script>   
+</body>
+</html>
