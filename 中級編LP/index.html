@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ヘッダーとメインビジュアルのコーディング</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Noto+Sans+JP:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/swiper.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/animate.css">
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css"
+    integrity="sha256-4IKNMNkEzbFKkM/0IFQRZaHrBWfe5DABhlZfNnAY/QY=" crossorigin="anonymous" />
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"
+    integrity="sha256-qWt5IwpxZvhegiyvbrx/BIGoPJgJnhAExbm5q6PEdDw=" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+  <header class="header">
+    <div class="inner header-inner">
+      <h1 class="header-logo"><a href="">
+          <img src="/img/logo.png" alt="The Company"></a><!-- /.header__logo -->
+      </h1>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#" class="nav-item-border Card">Card</a></li>
+          <li><a href="#" class="nav-item-border News">News</a></li>
+          <li><a href="#" class="nav-item-border Price">Price</a></li>
+          <li><a href="#" class="nav-item-border Access">Access</a></li>
+          <li><a href="#" class="nav-item-border Contact">Contact</a></li>
+        </ul>
+      </nav><!-- /.header__nav -->
+    </div><!-- /.header__inner -->
+  </header><!-- /.header -->
+
+  <button class="drawer-icon js-drawer for-drawer" type="button" data-target="for-drawer">
+    <span class="drawer-bars">
+      <span class="drawer-bar"></span>
+      <span class="drawer-bar"></span>
+      <span class="drawer-bar"></span>
+    </span>
+  </button><!-- /drawer-icon -->
+  <div class="drawer-background for-drawer"></div>
+  <div class="drawer-content for-drawer">
+    <ul>
+      <li class="Card"><a href="">Card</a></li>
+      <li class="News"><a href="">News</a></li>
+      <li class="Price"><a href="">Price</a></li>
+      <li class="Access"><a href="">Access</a></li>
+      <li class="Contact"><a href="">Contact</a></li>
+    </ul>
+  </div><!-- /drawer-content -->
+
+  <div class="mainvisual">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="mainvisual-content">
+            <div class="mainvisual-title">一番伝えたい<br class="hidden-tab hidden-pc">ことを書く</div>
+            <!-- /.mainvisual__title -->
+            <div class="mainvisual-lead">リードリードリード</div><!-- /.mainvisual__lead -->
+            <div class="mainvisual-button"><a class="button-mainvisual" href="">お問い合わせ</a></div>
+            <!-- /.mainvisual__button -->
+          </div><!-- /.mainvisual__content -->
+        </div>
+        <div class="swiper-slide">
+          <div class="mainvisual-content">
+            <div class="mainvisual-title">一番伝えたい<br class="hidden-tab hidden-pc">ことを書く2</div>
+            <!-- /.mainvisual__title -->
+            <div class="mainvisual-lead">リードリードリード2</div><!-- /.mainvisual__lead -->
+            <div class="mainvisual-button"><a class="button-mainvisual" href="">お問い合わせ2</a></div>
+            <!-- /.mainvisual__button -->
+          </div><!-- /.mainvisual__content -->
+        </div>
+        <div class="swiper-slide">
+          <div class="mainvisual-content">
+            <div class="mainvisual-title">一番伝えたい<br class="hidden-tab hidden-pc">ことを書く3</div>
+            <!-- /.mainvisual__title -->
+            <div class="mainvisual-lead">リードリードリード3</div><!-- /.mainvisual__lead -->
+            <div class="mainvisual-button"><a class="button-mainvisual" href="">お問い合わせ3</a></div>
+            <!-- /.mainvisual__button -->
+          </div><!-- /.mainvisual__content -->
+        </div><!-- /.swiper-slide -->
+        <div class="swiper-slide">
+          <div class="mainvisual-content">
+            <div class="mainvisual-title">一番伝えたい<br class="hidden-tab hidden-pc">ことを書く4</div>
+            <!-- /.mainvisual__title -->
+            <div class="mainvisual-lead">リードリードリード4</div><!-- /.mainvisual__lead -->
+            <div class="mainvisual-button"><a class="button-mainvisual" href="">お問い合わせ4</a></div>
+            <!-- /.mainvisual__button -->
+          </div><!-- /.mainvisual__content -->
+        </div><!-- /.swiper-slide -->
+        <div class="swiper-slide">
+          <div class="mainvisual-content">
+            <div class="mainvisual-title">一番伝えたい<br class="hidden-tab hidden-pc">ことを書く5</div>
+            <!-- /.mainvisual__title -->
+            <div class="mainvisual-lead">リードリードリード5</div><!-- /.mainvisual__lead -->
+            <div class="mainvisual-button"><a class="button-mainvisual" href="">お問い合わせ5</a></div>
+            <!-- /.mainvisual__button -->
+          </div><!-- /.mainvisual__content -->
+        </div><!-- /.swiper-slide -->
+      </div><!-- /.swiper-wrapper -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div><!-- /.swiper-container -->
+  </div><!-- /.mainvisual -->
+
+
+  <!-- タブ -->
+  <section class="tab">
+    <div class="inner tab__inner">
+      <h2 class="section-title">Tab</h2>
+      <div class="tab__nav">
+        <ul>
+          <li><span class="tab-active" data-target="#tab-item01">タブ1</span></li>
+          <li><span data-target="#tab-item02">タブ2</span></li>
+          <li><span data-target="#tab-item03">タブ3</span></li>
+          <li><span data-target="#tab-item04">タブ4</span></li>
+        </ul>
+      </div>
+      <div class="tab__content">
+        <div id="tab-item01" class="tab-item tab-active">
+          <div class="tab-item__lead"><span>タブ１のキャッチ的なテキスト</span></div>
+          <div class="tab-item__body">
+            <div class="tab-item__img"><img src="img/tab-img.svg" alt=""></div>
+            <div class="tab-item__content">
+              <div class="tab-item__title">タブ１の見出し</div>
+              <div class="tab-item__info">
+                タブ１のコンテンツ。タブ１のコンテンツ。タブ１のコンテンツ。タブ１のコンテンツ。タブ１のコンテンツ。タブ１のコンテンツ。タブ１のコンテンツ。タブ１のコンテンツ。タブ１のコンテンツ。タブ１のコンテンツ。タブ１のコンテンツ。タブ１のコンテンツ。タブ１のコンテンツ。タブ１のコンテンツ。タブ１のコンテンツ。タブ１のコンテンツ。タブ１のコンテンツ。
+              </div>
+              <div class="tab-item__link"><a class="button-arrow-right" href="">詳しく見る</a></div>
+            </div>
+          </div>
+        </div>
+        <div id="tab-item02" class="tab-item">
+          <div class="tab-item__lead"><span>タブ２のキャッチ的なテキスト</span></div><!-- /.tab-item__lead -->
+          <div class="tab-item__body">
+            <div class="tab-item__img"><img src="img/tab-img.svg" alt=""></div><!-- /.tab-item__img -->
+            <div class="tab-item__content">
+              <div class="tab-item__title">タブ２の見出し</div><!-- /.tab-item__title -->
+              <div class="tab-item__info">
+                タブ２のコンテンツ。タブ２のコンテンツ。タブ２のコンテンツ。タブ２のコンテンツ。タブ２のコンテンツ。タブ２のコンテンツ。タブ２のコンテンツ。タブ２のコンテンツ。タブ２のコンテンツ。タブ２のコンテンツ。タブ２のコンテンツ。タブ２のコンテンツ。タブ２のコンテンツ。タブ２のコンテンツ。タブ２のコンテンツ。タブ２のコンテンツ。タブ２のコンテンツ。
+              </div><!-- /.tab-item__info -->
+              <div class="tab-item__link"><a class="button-arrow-right" href="">詳しく見る</a></div><!-- /.tab-item__link -->
+            </div><!-- /.tab-item__content -->
+          </div><!-- /.tab-item__body -->
+        </div><!-- /.tab-item -->
+        <div id="tab-item03" class="tab-item">
+          <div class="tab-item__lead"><span>タブ３のキャッチ的なテキスト</span></div><!-- /.tab-item__lead -->
+          <div class="tab-item__body">
+            <div class="tab-item__img"><img src="img/tab-img.svg" alt=""></div><!-- /.tab-item__img -->
+            <div class="tab-item__content">
+              <div class="tab-item__title">タブ３の見出し</div><!-- /.tab-item__title -->
+              <div class="tab-item__info">
+                タブ３のコンテンツ。タブ３のコンテンツ。タブ３のコンテンツ。タブ３のコンテンツ。タブ３のコンテンツ。タブ３のコンテンツ。タブ３のコンテンツ。タブ３のコンテンツ。タブ３のコンテンツ。タブ３のコンテンツ。タブ３のコンテンツ。タブ３のコンテンツ。タブ３のコンテンツ。タブ３のコンテンツ。タブ３のコンテンツ。タブ３のコンテンツ。タブ３のコンテンツ。
+              </div><!-- /.tab-item__info -->
+              <div class="tab-item__link"><a class="button-arrow-right" href="">詳しく見る</a></div><!-- /.tab-item__link -->
+            </div><!-- /.tab-item__content -->
+          </div><!-- /.tab-item__body -->
+        </div><!-- /.tab-item -->
+        <div id="tab-item04" class="tab-item">
+          <div class="tab-item__lead"><span>タブ４のキャッチ的なテキスト</span></div><!-- /.tab-item__lead -->
+          <div class="tab-item__body">
+            <div class="tab-item__img"><img src="img/tab-img.svg" alt=""></div><!-- /.tab-item__img -->
+            <div class="tab-item__content">
+              <div class="tab-item__title">タブ４の見出し</div><!-- /.tab-item__title -->
+              <div class="tab-item__info">
+                タブ４のコンテンツ。タブ４のコンテンツ。タブ４のコンテンツ。タブ４のコンテンツ。タブ４のコンテンツ。タブ４のコンテンツ。タブ４のコンテンツ。タブ４のコンテンツ。タブ４のコンテンツ。タブ４のコンテンツ。タブ４のコンテンツ。タブ４のコンテンツ。タブ４のコンテンツ。タブ４のコンテンツ。タブ４のコンテンツ。タブ４のコンテンツ。タブ４のコンテンツ。
+              </div><!-- /.tab-item__info -->
+              <div class="tab-item__link"><a class="button-arrow-right" href="">詳しく見る</a></div><!-- /.tab-item__link -->
+            </div><!-- /.tab-item__content -->
+          </div><!-- /.tab-item__body -->
+        </div><!-- /.tab-item -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- カード -->
+  <section class="card">
+    <div class="card-inner inner">
+      <h2 class="section-title">Card</h2>
+      <div class="card-items">
+        <div class="wow fadeIn card-item">
+          <a class="media" href="">
+            <div class="media-img">
+              <img src="/img/card-img.svg" alt=""></div>
+            <div class="media-body">
+              <div class="media-title">タイトルタイトル</div>
+              <div class="media-content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+            </div>
+          </a>
+        </div>
+        <div class="wow fadeInDown card-item" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10"
+          data-wow-iteration="1">
+          <a class="media" href="">
+            <div class="media-img">
+              <img src="/img/card-img.svg" alt=""></div>
+            <div class="media-body">
+              <div class="media-title">タイトルタイトル</div>
+              <div class="media-content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+            </div>
+          </a>
+        </div>
+        <div class="wow wobble card-item" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="1"
+          data-wow-iteration="1">
+          <a class="media" href="">
+            <div class="media-img">
+              <img src="/img/card-img.svg" alt=""></div>
+            <div class="media-body">
+              <div class="media-title">タイトルタイトル</div>
+              <div class="media-content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+            </div>
+          </a>
+        </div>
+        <div class="wow fadeInUpBig card-item" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="10"
+          data-wow-iteration="1">
+          <a class="media" href="">
+            <div class="media-img">
+              <img src="/img/card-img.svg" alt=""></div>
+            <div class="media-body">
+              <div class="media-title">タイトルタイトル</div>
+              <div class="media-content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+            </div>
+          </a>
+        </div>
+        <div class="wow flipInX card-item" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10"
+          data-wow-iteration="1">
+          <a class="media" href="">
+            <div class="media-img">
+              <img src="/img/card-img.svg" alt=""></div>
+            <div class="media-body">
+              <div class="media-title">タイトルタイトル</div>
+              <div class="media-content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+            </div>
+          </a>
+        </div>
+        <div class="wow rollIn card-item" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="5"
+          data-wow-iteration="1">
+          <a class="media" href="">
+            <div class="media-img">
+              <img src="/img/card-img.svg" alt=""></div>
+            <div class="media-body">
+              <div class="media-title">タイトルタイトル</div>
+              <div class="media-content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ニュース -->
+
+  <section class="news">
+    <div class="inner news__inner">
+      <h2 class="section-title">News</h2>
+      <div class="news__items">
+        <div class="news__item">
+          <div class="info">
+            <div class="info__meta">
+              <time class="info__published" datetime="2019-01-30">2019-01-30
+              </time>
+              <div class="info__label"><a href="">ラベル１</a>
+              </div>
+            </div>
+            <div class="info__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュースニュース</a></div>
+          </div>
+        </div>
+        <div class="news__item">
+          <div class="info">
+            <div class="info__meta">
+              <time class="info__published" datetime="2019-01-30">2019-01-30</time><!-- /.info__published -->
+              <div class="info__label info__label--type01"><a href="">ラベル２</a></div><!-- /.info__label -->
+            </div><!-- /.info__meta -->
+            <div class="info__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュースニュース</a></div><!-- /.info__title -->
+          </div><!-- /.info -->
+        </div><!-- /.news__item -->
+        <div class="news__item">
+          <div class="info">
+            <div class="info__meta">
+              <time class="info__published" datetime="2019-01-30">2019-01-30</time><!-- /.info__published -->
+              <div class="info__label info__label--type02"><a href="">ラベル３</a></div><!-- /.info__label -->
+            </div><!-- /.info__meta -->
+            <div class="info__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュースニュース</a></div><!-- /.info__title -->
+          </div><!-- /.info -->
+        </div><!-- /.news__item -->
+        <div class="news__item">
+          <div class="info">
+            <div class="info__meta">
+              <time class="info__published" datetime="2019-01-30">2019-01-30</time><!-- /.info__published -->
+              <div class="info__label"><a href="">ラベル１</a></div><!-- /.info__label -->
+            </div><!-- /.info__meta -->
+            <div class="info__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</a></div>
+            <!-- /.info__title -->
+          </div><!-- /.info -->
+        </div><!-- /.news__item -->
+        <div class="news__item">
+          <div class="info">
+            <div class="info__meta">
+              <time class="info__published" datetime="2019-01-30">2019-01-30</time><!-- /.info__published -->
+              <div class="info__label"><a href="">ラベル１</a></div><!-- /.info__label -->
+            </div><!-- /.info__meta -->
+            <div class="info__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュースニュース</a></div><!-- /.info__title -->
+          </div><!-- /.info -->
+        </div><!-- /.news__item -->
+      </div><!-- /.news__items -->
+      <div class="news__link"><a href="">more</a></div><!-- /.news__link -->
+    </div><!-- /.news__inner -->
+  </section><!-- /.news -->
+
+  <!-- プライス -->
+
+  <section class="price">
+    <div class="price__inner inner">
+      <h2 class="section-title">Price</h2>
+      <div class="price__items">
+        <div class="price__item1"><img class="wow bounceIn" src="/img/price-img.png" alt=""></div>
+        <div class="price__item2">
+          <table class="price__table">
+            <tr>
+              <th></th>
+              <th>column1</th>
+              <th>column2</th>
+            </tr>
+            <tr>
+              <th>row1</th>
+              <td>100円</td>
+              <td>100円</td>
+            </tr>
+            <tr>
+              <th>row2</th>
+              <td>6,000円</td>
+              <td>0円</td>
+            </tr>
+            <tr>
+              <th>row3</th>
+              <td><span>6,000円</span> <br>※ 今だけ半額</td>
+              <td>0円</td>
+            </tr>
+            <tr>
+              <th>row4</th>
+              <td>100円</td>
+              <td>100円</td>
+            </tr>
+          </table>
+          <p>※ 目安なので詳しくは<span><a href="">お問い合わせ</a></span>ください。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 地図 -->
+  <section class="map">
+    <div class="map__inner inner">
+      <h2 class="section-title">Acess</h2>
+      <div class="map__item">
+        <div class="iframe__wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6482.550090556041!2d139.702698!3d35.670229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x560d87a8e2d1d3d2!2z5Y6f5a6_6aeF!5e0!3m2!1sja!2sus!4v1589171044794!5m2!1sja!2sus"
+            width="800" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+      </div>
+      <dl class="map__info">
+        <dt>住所</dt>
+        <dd>ほげほげほげのほげの場所</dd>
+        <dt>アクセス</dt>
+        <dd>〇〇駅から右に５分</dd>
+      </dl>
+      <div class="map__link"><a class="button-arrow-right" href="https://goo.gl/maps/8ZUEoc5n4PGZcdbM6"
+          target="_blank">Googleマップで見る</a></div>
+    </div>
+  </section>
+  <!-- Q&A -->
+  <section class="QandA">
+    <div class="section-title">Q&A</div>
+    <div class="inner ac__inner">
+      <dl id="acMenu">
+        <dt><span>Q</span>クリックするとどうなりますか？</dt>
+        <dd>
+          アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。
+        </dd>
+        <dt><span>Q</span>クリックするとどうなりますか？</dt>
+        <dd>
+          アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。
+        </dd>
+        <dt><span>Q</span>クリックするとどうなりますか？</dt>
+        <dd>
+          アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。
+        </dd>
+        <dt><span>Q</span>クリックするとどうなりますか？</dt>
+        <dd>
+          アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。
+        </dd>
+      </dl>
+    </div>
+  </section>
+  <!-- コンタクトフォーム -->
+  <section class="contact">
+    <div class="inner contact__inner">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact__wrap">
+        <div class="contact__name contact__flex">
+          <div class="meta">お名前<br><span>必須</span></div>
+          <input class="text" type="text" placeholder="山田太郎">
+        </div>
+        <div class="contact__mail contact__flex">
+          <div class="meta">メールアドレス<br><span>必須</span></div>
+          <input class="text" type="email" placeholder="text@example.com">
+        </div>
+        <div class="contact__type contact__flex">
+          <div class="meta">お問い合わせ種別</div>
+          <select class="select-test" name="type" id="">
+            <option value="">ーーー</option>
+            <option value="text">text</option>
+            <option value="text">text</option>
+            <option value="text">text</option>
+          </select>
+        </div>
+        <div class="contact__content contact__flex">
+          <div class="meta">お問い合わせ内容</div>
+          <textarea name="text" id="" cols="30" rows="10" placeholder="お問い合わせを入力してください"></textarea>
+        </div>
+        <div class="radio__wrap">
+          <label><input class="radio-test" type="radio" name="radio"><span>ラジオ１</span></label>
+          <label><input class="radio-test" type="radio" name="radio"><span>ラジオ２</span></label>
+          <label><input class="radio-test" type="radio" name="radio"><span>ラジオ３</span></label>
+          <div class="privacy__wrap">
+            <label><input class="check" type="checkbox" name="check-name"><span><a
+                  href="">プライバシーポリシー</a>に合意する</span></label>
+          </div>
+          <div class="submit__btn button"><a href="">送信する</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="inner footer__inner">
+      <div class="footer__content">
+        <div class="company">
+          <img src="/img/logo.png" alt="">
+          <p>住所：ほげほげのほげほげ</p>
+          <p>TEL：0000-00-0000</p>
+        </div>
+        <div class="menu">
+          <p>Card</p>
+          <p>News</p>
+          <p>Price</p>
+          <p>Access</p>
+          <p>Contact</p>
+        </div>
+        <div class="icon">
+          <img src="/img/twitter.svg" alt="">
+          <img src="/img/facebook.svg" alt="">
+          <img src="/img/instagram.svg" alt="">
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="copyright">
+          <p>Copyright © 2018 @haniwa008 All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__top">
+      <img src="/img/totop.svg" alt="">
+    </div>
+  </footer>
+  <script src="js/swiper.min.js"></script>
+  <script>
+    // スライダー
+    var mySwiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+      }
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>
+    // ドロワー
+    jQuery(".js-drawer").on("click", function (e) {
+      e.preventDefault();
+      let targetClass = jQuery(this).attr("data-target");
+      jQuery("." + targetClass).toggleClass("is-checked");
+      return false;
+    });
+  </script>
+  <!-- クリック(メニュー) -->
+  <script>
+    $('.nav-item-border').click(function () {
+      $('.nav-item-border').removeClass('is-active');
+      $(this).addClass('is-active');
+      return false;
+    });
+  </script>
+  <script>
+    // クリック（タブ）
+    jQuery('.tab__nav ul li span').click(function (e) {
+      e.preventDefault();
+      let target = jQuery(this).data("target");
+
+      jQuery('.tab__nav ul li span').removeClass('tab-active');
+      jQuery(this).addClass('tab-active');
+
+      jQuery('.tab-item').removeClass('tab-active');
+      jQuery(target).addClass('tab-active');
+
+      return false;
+    });
+  </script>
+  <!-- アコーディオン -->
+  <script>
+    $(function () {
+      $("#acMenu dt").on("click", function () {
+        $(this).next().slideToggle();
+      });
+    });
+  </script>
+  <script>
+    $(function() {
+  $('dt').click(function() {
+    $(this).toggleClass('active');
+  });
+});
+  </script>
+
+  <!-- スクロール -->
+  <script src="js/scroll.js"></script>
+</body>
+
+
+</html>
